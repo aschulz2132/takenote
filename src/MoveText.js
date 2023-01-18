@@ -6,13 +6,13 @@ export default function MoveText() {
     cursor: "pointer",
     margin: "0",
     padding: "0",
-    display: "inline-block"
+    display: "inline-block",
   };
 
   function held() {}
   return (
     <>
-      <Draggable cancel=".cancel">
+      <Draggable cancel=".cancel" grid={[10, 10]} bounds="parent">
         <div style={bord} onClick={held}>
           <textarea className="cancel"></textarea>
         </div>
